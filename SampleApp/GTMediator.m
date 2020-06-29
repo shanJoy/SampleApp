@@ -7,12 +7,13 @@
 //
 
 #import "GTMediator.h"
-#import "GTDetailViewController.h"
 
 @implementation GTMediator
 
 + (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl {
-    GTDetailViewController *controller = [[GTDetailViewController alloc] initWithUrlString:detailUrl];
+    
+    Class detailCls = NSClassFromString(@"GTDetailViewController");
+    UIViewController *controller = [[detailCls alloc] performSelector:NSSelectorFromString(@"initWithUrlString:") withObject:detailUrl];
     return controller;
 }
 
