@@ -36,6 +36,9 @@
     
     for (int i=0; i<5; i++) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(scrollView.bounds.size.width * i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
+        
+//        UIImage *image2x = [UIImage imageNamed:@"testScale"];
+        
         [view addSubview:({
             UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
             view.backgroundColor = [UIColor whiteColor];
@@ -53,7 +56,14 @@
 }
 
 - (void)viewClick {
-    NSLog(@"viewClick");
+    
+    NSURL *urlScheme = [NSURL URLWithString:@"testScheme://"];
+    
+    BOOL canOpenURL = [[UIApplication sharedApplication] canOpenURL:urlScheme];
+    
+    [[UIApplication sharedApplication] openURL:urlScheme options:nil completionHandler:^(BOOL success) {
+        NSLog(@"");
+    }];
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{

@@ -51,12 +51,15 @@
 
 - (instancetype)init{
     self = [super init];
-//    if (self) {
+    if (self) {
 //        _dataArray = @[].mutableCopy;
 //        for (int i=0; i<20; i++) {
 //            [_dataArray addObject:@(i)];
 //        }
-//    }
+        self.tabBarItem.title = @"新闻";
+        self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    }
     // MARK: - 初始化进不去
     return self;
 }

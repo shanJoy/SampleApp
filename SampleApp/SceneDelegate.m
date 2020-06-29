@@ -2,6 +2,7 @@
 #import "GTNewsViewController.h"
 #import "GTVideoViewController.h"
 #import "GTRecommandViewController.h"
+#import "GTSplashView.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -50,6 +51,13 @@
         
         [self.window setRootViewController:navgationController];
         [self.window makeKeyAndVisible];
+        
+        [self.window addSubview:({
+            GTSplashView *splashView = [[GTSplashView alloc] initWithFrame:self.window.bounds];
+            splashView;
+        })];
+    }else{
+        NSLog(@"----iOS < 13.0-----");
     }
 }
 
@@ -87,6 +95,17 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+}
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+    
+    NSEnumerator *enumerator = [URLContexts objectEnumerator];
+    UIOpenURLContext *context;
+    while (context = [enumerator nextObject]) {
+        NSLog(@"context.URL =====%@",context.URL);
+        NSLog(@"context.options.sourceApplication ===== %@",context.options.sourceApplication);
+    }
+    NSLog(@"");
 }
 
 

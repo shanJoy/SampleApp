@@ -13,7 +13,6 @@
 		795B907F23C4AC8C008BDA00 /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B907E23C4AC8C008BDA00 /* GTNewsViewController.m */; };
 		795B908223C4AC8C008BDA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795B908023C4AC8C008BDA00 /* Main.storyboard */; };
 		795B908423C4AC8D008BDA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795B908323C4AC8D008BDA00 /* Assets.xcassets */; };
-		795B908723C4AC8D008BDA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795B908523C4AC8D008BDA00 /* LaunchScreen.storyboard */; };
 		795B908A23C4AC8D008BDA00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B908923C4AC8D008BDA00 /* main.m */; };
 		795B909123CAB49B008BDA00 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 795B909023CAB49B008BDA00 /* icon.bundle */; };
 		795B909423CB082D008BDA00 /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B909323CB082D008BDA00 /* GTVideoViewController.m */; };
@@ -23,6 +22,12 @@
 		795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90A223CC6A03008BDA00 /* GTDeleteCellView.m */; };
 		795B90AC23CD63AF008BDA00 /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90AB23CD63AF008BDA00 /* GTListLoader.m */; };
 		795B90B223CDBA7F008BDA00 /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90B123CDBA7F008BDA00 /* GTListItem.m */; };
+		B132878C24A237ED001F1DA6 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = B132878B24A237ED001F1DA6 /* GTSplashView.m */; };
+		B13D4E19249651DC003705AE /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = B13D4E18249651DC003705AE /* GTVideoCoverView.m */; };
+		B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */; };
+		B191D2EF249909B1007BC3AF /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */; };
+		B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1929DD7249A414B002E6967 /* GTVideoToolBar.m */; };
+		B1AE812A249E466E00F3A7D0 /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE8129249E466E00F3A7D0 /* GTScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +42,6 @@
 		795B907E23C4AC8C008BDA00 /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		795B908123C4AC8C008BDA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		795B908323C4AC8D008BDA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		795B908623C4AC8D008BDA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		795B908823C4AC8D008BDA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		795B908923C4AC8D008BDA00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		795B909023CAB49B008BDA00 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
@@ -55,6 +59,17 @@
 		795B90AB23CD63AF008BDA00 /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
 		795B90B023CDBA7F008BDA00 /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
 		795B90B123CDBA7F008BDA00 /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
+		B132878A24A237ED001F1DA6 /* GTSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSplashView.h; sourceTree = "<group>"; };
+		B132878B24A237ED001F1DA6 /* GTSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSplashView.m; sourceTree = "<group>"; };
+		B13D4E17249651DC003705AE /* GTVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
+		B13D4E18249651DC003705AE /* GTVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
+		B170755024A8BFE400D49E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B191D2ED249909B1007BC3AF /* GTVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoPlayer.h; sourceTree = "<group>"; };
+		B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
+		B1929DD6249A414B002E6967 /* GTVideoToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolBar.h; sourceTree = "<group>"; };
+		B1929DD7249A414B002E6967 /* GTVideoToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolBar.m; sourceTree = "<group>"; };
+		B1AE8128249E466E00F3A7D0 /* GTScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTScreen.h; sourceTree = "<group>"; };
+		B1AE8129249E466E00F3A7D0 /* GTScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTScreen.m; sourceTree = "<group>"; };
 		B9116FAB144CE19B892B9CDE /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +114,7 @@
 		795B907623C4AC8C008BDA00 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B14AB84724964EB300DE4B84 /* VideoController */,
 				795B90A723CD5AC3008BDA00 /* NewsController */,
 				795B909023CAB49B008BDA00 /* icon.bundle */,
 				795B907723C4AC8C008BDA00 /* AppDelegate.h */,
@@ -106,14 +122,16 @@
 				795B907A23C4AC8C008BDA00 /* SceneDelegate.h */,
 				795B907B23C4AC8C008BDA00 /* SceneDelegate.m */,
 				795B908023C4AC8C008BDA00 /* Main.storyboard */,
+				B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */,
 				795B908323C4AC8D008BDA00 /* Assets.xcassets */,
-				795B908523C4AC8D008BDA00 /* LaunchScreen.storyboard */,
 				795B908823C4AC8D008BDA00 /* Info.plist */,
 				795B908923C4AC8D008BDA00 /* main.m */,
-				795B909223CB082D008BDA00 /* GTVideoViewController.h */,
-				795B909323CB082D008BDA00 /* GTVideoViewController.m */,
 				795B909523CB24FB008BDA00 /* GTRecommandViewController.h */,
 				795B909623CB24FB008BDA00 /* GTRecommandViewController.m */,
+				B1AE8128249E466E00F3A7D0 /* GTScreen.h */,
+				B1AE8129249E466E00F3A7D0 /* GTScreen.m */,
+				B132878A24A237ED001F1DA6 /* GTSplashView.h */,
+				B132878B24A237ED001F1DA6 /* GTSplashView.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -167,6 +185,21 @@
 				795B90A223CC6A03008BDA00 /* GTDeleteCellView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B14AB84724964EB300DE4B84 /* VideoController */ = {
+			isa = PBXGroup;
+			children = (
+				795B909223CB082D008BDA00 /* GTVideoViewController.h */,
+				795B909323CB082D008BDA00 /* GTVideoViewController.m */,
+				B13D4E17249651DC003705AE /* GTVideoCoverView.h */,
+				B13D4E18249651DC003705AE /* GTVideoCoverView.m */,
+				B191D2ED249909B1007BC3AF /* GTVideoPlayer.h */,
+				B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */,
+				B1929DD6249A414B002E6967 /* GTVideoToolBar.h */,
+				B1929DD7249A414B002E6967 /* GTVideoToolBar.m */,
+			);
+			path = VideoController;
 			sourceTree = "<group>";
 		};
 		C44F3989351EC87D853DF92C /* Pods */ = {
@@ -237,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				795B909123CAB49B008BDA00 /* icon.bundle in Resources */,
-				795B908723C4AC8D008BDA00 /* LaunchScreen.storyboard in Resources */,
+				B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */,
 				795B908423C4AC8D008BDA00 /* Assets.xcassets in Resources */,
 				795B908223C4AC8C008BDA00 /* Main.storyboard in Resources */,
 			);
@@ -275,17 +308,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AE812A249E466E00F3A7D0 /* GTScreen.m in Sources */,
 				795B90A023CC51AA008BDA00 /* GTDetailViewController.m in Sources */,
+				B13D4E19249651DC003705AE /* GTVideoCoverView.m in Sources */,
+				B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */,
 				795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */,
 				795B909D23CBF357008BDA00 /* GTNormalTableViewCell.m in Sources */,
 				795B907F23C4AC8C008BDA00 /* GTNewsViewController.m in Sources */,
 				795B909423CB082D008BDA00 /* GTVideoViewController.m in Sources */,
 				795B90AC23CD63AF008BDA00 /* GTListLoader.m in Sources */,
 				795B90B223CDBA7F008BDA00 /* GTListItem.m in Sources */,
+				B132878C24A237ED001F1DA6 /* GTSplashView.m in Sources */,
 				795B909723CB24FB008BDA00 /* GTRecommandViewController.m in Sources */,
 				795B907923C4AC8C008BDA00 /* AppDelegate.m in Sources */,
 				795B908A23C4AC8D008BDA00 /* main.m in Sources */,
 				795B907C23C4AC8C008BDA00 /* SceneDelegate.m in Sources */,
+				B191D2EF249909B1007BC3AF /* GTVideoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +338,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		795B908523C4AC8D008BDA00 /* LaunchScreen.storyboard */ = {
+		B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				795B908623C4AC8D008BDA00 /* Base */,
+				B170755024A8BFE400D49E06 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -361,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -413,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -426,10 +464,11 @@
 			baseConfigurationReference = 57EA873CB116729AE62EDEEE /* Pods-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8235HY6K4;
 				INFOPLIST_FILE = SampleApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhngsj.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,10 +485,11 @@
 			baseConfigurationReference = 3315B9D86B5F848A9FB23ED9 /* Pods-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8235HY6K4;
 				INFOPLIST_FILE = SampleApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhngsj.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
