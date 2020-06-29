@@ -25,6 +25,7 @@
 		B132878C24A237ED001F1DA6 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = B132878B24A237ED001F1DA6 /* GTSplashView.m */; };
 		B13D4E19249651DC003705AE /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = B13D4E18249651DC003705AE /* GTVideoCoverView.m */; };
 		B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */; };
+		B1897DFF24AA116F0039B409 /* GTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1897DFE24AA116F0039B409 /* GTMediator.m */; };
 		B191D2EF249909B1007BC3AF /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */; };
 		B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1929DD7249A414B002E6967 /* GTVideoToolBar.m */; };
 		B1AE812A249E466E00F3A7D0 /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE8129249E466E00F3A7D0 /* GTScreen.m */; };
@@ -64,6 +65,8 @@
 		B13D4E17249651DC003705AE /* GTVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
 		B13D4E18249651DC003705AE /* GTVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
 		B170755024A8BFE400D49E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1897DFD24AA116F0039B409 /* GTMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMediator.h; sourceTree = "<group>"; };
+		B1897DFE24AA116F0039B409 /* GTMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMediator.m; sourceTree = "<group>"; };
 		B191D2ED249909B1007BC3AF /* GTVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoPlayer.h; sourceTree = "<group>"; };
 		B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		B1929DD6249A414B002E6967 /* GTVideoToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolBar.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				B1AE8129249E466E00F3A7D0 /* GTScreen.m */,
 				B132878A24A237ED001F1DA6 /* GTSplashView.h */,
 				B132878B24A237ED001F1DA6 /* GTSplashView.m */,
+				B1897DFD24AA116F0039B409 /* GTMediator.h */,
+				B1897DFE24AA116F0039B409 /* GTMediator.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */,
 				795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */,
 				795B909D23CBF357008BDA00 /* GTNormalTableViewCell.m in Sources */,
+				B1897DFF24AA116F0039B409 /* GTMediator.m in Sources */,
 				795B907F23C4AC8C008BDA00 /* GTNewsViewController.m in Sources */,
 				795B909423CB082D008BDA00 /* GTVideoViewController.m in Sources */,
 				795B90AC23CD63AF008BDA00 /* GTListLoader.m in Sources */,

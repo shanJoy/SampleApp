@@ -8,10 +8,10 @@
 
 #import "GTNewsViewController.h"
 #import "GTNormalTableViewCell.h"
-#import "GTDetailViewController.h"
 #import "GTDeleteCellView.h"
 #import "GTListLoader.h"
 #import "GTListItem.h"
+#import "GTMediator.h"
 
 @interface TestView : UIView
 @end
@@ -110,9 +110,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     GTListItem *item = [self.dataArray objectAtIndex: indexPath.row];
-    GTDetailViewController *controller = [[GTDetailViewController alloc] initWithUrlString:item.url];
-//    controller.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
-    [self.navigationController pushViewController:controller animated:true];
+    __kindof UIViewController *detailController = [GTMediator detailViewControllerWithUrl:item.url];
+    detailController.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
+    [self.navigationController pushViewController:detailController animated:true];
     
     // 标记已读状态 不建议使用这种方式 此处仅为展示l实现流程
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:item.uniquekey];
