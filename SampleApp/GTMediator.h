@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+//常用的三种组件化方案
+
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol GTDetailViewControllerProtocol <NSObject>
+- (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl;
+@end
 
 @interface GTMediator : NSObject
 
@@ -20,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^GTMediatorProcessBlock)(NSDictionary *params);
 + (void)registerScheme:(NSString *)scheme processBlock:(GTMediatorProcessBlock)processBlock;
 + (void)openUrl:(NSString *)url params:(NSDictionary *)params;
+
+// protocol class
++ (void)registerProtol:(Protocol *)proto class:(Class)cls;
++ (Class)classForProtol:(Protocol *)proto;
 
 @end
 

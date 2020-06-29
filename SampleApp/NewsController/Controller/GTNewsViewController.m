@@ -116,7 +116,10 @@
 //    [self.navigationController pushViewController:detailController animated:true];
     
     // url scheme
-    [GTMediator openUrl:@"detail://" params:@{@"url":item.url,@"controller":self.navigationController}];
+//    [GTMediator openUrl:@"detail://" params:@{@"url":item.url,@"controller":self.navigationController}];
+    
+    Class cls = [GTMediator classForProtol:@protocol(GTDetailViewControllerProtocol)];
+    [self.navigationController pushViewController:[[cls alloc] detailViewControllerWithUrl:item.url] animated:YES];
     
     // 标记已读状态 不建议使用这种方式 此处仅为展示l实现流程
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:item.uniquekey];

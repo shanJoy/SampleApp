@@ -29,15 +29,21 @@
     return self;
 }
 
+// GTDetailViewControllerProtocol 的实现 ----
+- (__kindof UIViewController *)detailViewControllerWithUrl:(NSString *)detailUrl{
+    return [[[self class] alloc] initWithUrlString:detailUrl];
+}
+
 +(void)load{
-    [GTMediator registerScheme:@"detail://" processBlock:^(NSDictionary * _Nonnull params) {
-        NSString *url = [params objectForKey:@"url"];
-        UINavigationController *navigationController = (UINavigationController *)[params objectForKey:@"controller"];
-        
-        GTDetailViewController *controller = [[GTDetailViewController alloc] initWithUrlString:url];
-//        controller.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
-        [navigationController pushViewController:controller animated:true];
-    }];
+//    [GTMediator registerScheme:@"detail://" processBlock:^(NSDictionary * _Nonnull params) {
+//        NSString *url = [params objectForKey:@"url"];
+//        UINavigationController *navigationController = (UINavigationController *)[params objectForKey:@"controller"];
+//        GTDetailViewController *controller = [[GTDetailViewController alloc] initWithUrlString:url];
+////        controller.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
+//        [navigationController pushViewController:controller animated:true];
+//    }];
+    
+    [GTMediator registerProtol:@protocol(GTDetailViewControllerProtocol) class:[self class]];
 }
 
 - (void)dealloc
