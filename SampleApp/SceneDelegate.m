@@ -3,6 +3,8 @@
 #import "GTVideoViewController.h"
 #import "GTRecommandViewController.h"
 #import "GTSplashView.h"
+#import "GTStaticTest.h"
+#import <GTFramework/GTFrameworkTest.h>
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -59,6 +61,12 @@
     }else{
         NSLog(@"----iOS < 13.0-----");
     }
+    
+    // static
+    //[[GTStaticTest alloc] init];
+    
+    // framework
+    //[[GTFrameworkTest alloc] init];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
