@@ -22,6 +22,9 @@
 		795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90A223CC6A03008BDA00 /* GTDeleteCellView.m */; };
 		795B90AC23CD63AF008BDA00 /* GTListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90AB23CD63AF008BDA00 /* GTListLoader.m */; };
 		795B90B223CDBA7F008BDA00 /* GTListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 795B90B123CDBA7F008BDA00 /* GTListItem.m */; };
+		B10FE6A024AF315F00B2317A /* GTLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE69E24AF315F00B2317A /* GTLogin.m */; };
+		B10FE6A424B15C6E00B2317A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FE6A324B15C6D00B2317A /* SystemConfiguration.framework */; };
+		B10FE6A624B1644D00B2317A /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FE6A524B1644D00B2317A /* TencentOpenAPI.framework */; };
 		B114BBBE24AB656200F3FF72 /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBBC24AB656200F3FF72 /* libGTStatic.a */; };
 		B114BBDA24AB6A1100F3FF72 /* GTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; };
 		B114BBDB24AB6A1100F3FF72 /* GTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -78,6 +81,10 @@
 		795B90AB23CD63AF008BDA00 /* GTListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListLoader.m; sourceTree = "<group>"; };
 		795B90B023CDBA7F008BDA00 /* GTListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTListItem.h; sourceTree = "<group>"; };
 		795B90B123CDBA7F008BDA00 /* GTListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTListItem.m; sourceTree = "<group>"; };
+		B10FE69E24AF315F00B2317A /* GTLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLogin.m; sourceTree = "<group>"; };
+		B10FE69F24AF315F00B2317A /* GTLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLogin.h; sourceTree = "<group>"; };
+		B10FE6A324B15C6D00B2317A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B10FE6A524B1644D00B2317A /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		B114BBBB24AB656200F3FF72 /* GTStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStatic.h; sourceTree = "<group>"; };
 		B114BBBC24AB656200F3FF72 /* libGTStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGTStatic.a; sourceTree = "<group>"; };
 		B114BBBD24AB656200F3FF72 /* GTStaticTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStaticTest.h; sourceTree = "<group>"; };
@@ -105,7 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10FE6A624B1644D00B2317A /* TencentOpenAPI.framework in Frameworks */,
 				B114BBBE24AB656200F3FF72 /* libGTStatic.a in Frameworks */,
+				B10FE6A424B15C6E00B2317A /* SystemConfiguration.framework in Frameworks */,
 				5CE5AD5C1BCC108667893DD0 /* libPods-SampleApp.a in Frameworks */,
 				B114BBDA24AB6A1100F3FF72 /* GTFramework.framework in Frameworks */,
 			);
@@ -117,6 +126,7 @@
 		0C295AF4A9BAE9BB1846EC0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B10FE6A324B15C6D00B2317A /* SystemConfiguration.framework */,
 				B9116FAB144CE19B892B9CDE /* libPods-SampleApp.a */,
 			);
 			name = Frameworks;
@@ -223,6 +233,7 @@
 		B114BBBA24AB64CF00F3FF72 /* GTFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B10FE6A524B1644D00B2317A /* TencentOpenAPI.framework */,
 				B114BBD824AB698800F3FF72 /* GTFramework.framework */,
 				B114BBBB24AB656200F3FF72 /* GTStatic.h */,
 				B114BBBD24AB656200F3FF72 /* GTStaticTest.h */,
@@ -234,6 +245,8 @@
 		B114BBDD24AB6DE000F3FF72 /* MineController */ = {
 			isa = PBXGroup;
 			children = (
+				B10FE69F24AF315F00B2317A /* GTLogin.h */,
+				B10FE69E24AF315F00B2317A /* GTLogin.m */,
 				B114BBDE24AB6E3200F3FF72 /* GTMineViewController.h */,
 				B114BBDF24AB6E3200F3FF72 /* GTMineViewController.m */,
 			);
@@ -368,6 +381,7 @@
 				B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */,
 				795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */,
 				795B909D23CBF357008BDA00 /* GTNormalTableViewCell.m in Sources */,
+				B10FE6A024AF315F00B2317A /* GTLogin.m in Sources */,
 				B1897DFF24AA116F0039B409 /* GTMediator.m in Sources */,
 				795B907F23C4AC8C008BDA00 /* GTNewsViewController.m in Sources */,
 				795B909423CB082D008BDA00 /* GTVideoViewController.m in Sources */,

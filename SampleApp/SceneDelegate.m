@@ -4,7 +4,8 @@
 #import "GTRecommandViewController.h"
 #import "GTSplashView.h"
 #import "GTStaticTest.h"
-#import <GTFramework/GTFrameworkTest.h>
+//#import <GTFramework/GTFrameworkTest.h>
+#import "GTMineViewController.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -39,14 +40,9 @@
         
         GTRecommandViewController *recommandController = [[GTRecommandViewController alloc] init];
        
+        GTMineViewController *mineController = [[GTMineViewController alloc] init];
         
-        UIViewController *mineViewController = [[UIViewController alloc] init];
-        mineViewController.view.backgroundColor = [UIColor systemPinkColor];
-        mineViewController.tabBarItem.title = @"我的";
-        mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
-        mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
-        
-        [tabbarController setViewControllers:@[newsViewController,videoController,recommandController,mineViewController]];
+        [tabbarController setViewControllers:@[newsViewController,videoController,recommandController,mineController]];
         tabbarController.delegate = self;
         
         UINavigationController *navgationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
