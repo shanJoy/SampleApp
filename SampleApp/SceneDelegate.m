@@ -6,6 +6,9 @@
 #import "GTStaticTest.h"
 //#import <GTFramework/GTFrameworkTest.h>
 #import "GTMineViewController.h"
+#include <execinfo.h>
+#import "GTLocation.h"
+#import "GTNotification.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -63,6 +66,13 @@
     
     // framework
     //[[GTFrameworkTest alloc] init];
+    
+    // crash
+    //[self _catchException];
+    //[@[].mutableCopy addObject:nil];
+    
+    [[GTLocation locationManager] checkLocationAthorization];
+    [[GTNotification notificationManager] checkNotificationAthorization]; 
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
@@ -112,5 +122,38 @@
     NSLog(@"");
 }
 
+#pragma mark - crash
+
+- (void)_catchException {
+    //NSException
+    NSSetUncaughtExceptionHandler(HandleNSException);
+    
+    //signal
+    signal(SIGABRT, SignalExceptionHandler);
+    signal(SIGILL, SignalExceptionHandler);
+    signal(SIGSEGV, SignalExceptionHandler);
+    signal(SIGFPE, SignalExceptionHandler);
+    signal(SIGBUS, SignalExceptionHandler);
+    signal(SIGPIPE, SignalExceptionHandler);
+}
+
+void SignalExceptionHandler(int signal){
+    void* callstack[128];
+    int frames = backtrace(callstack, 128);
+    char **strs = backtrace_symbols(callstack, frames);
+    NSMutableArray *backtrace = [NSMutableArray arrayWithCapacity:frames];
+    for (int i = 0; i < frames; i++) {
+        [backtrace addObject:[NSString stringWithUTF8String:strs[i]]];
+    }
+    free(strs);
+    //存储crash信息。
+}
+
+
+void HandleNSException(NSException *exception) {
+    __unused NSString *reason = [exception reason];
+    __unused NSString *name = [exception name];
+    //存储crash信息
+}
 
 @end

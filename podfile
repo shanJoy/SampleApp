@@ -3,4 +3,5 @@ platform :ios, '13.2'
 target 'SampleApp' do
     pod 'AFNetworking'
     pod 'SDWebImage'
+    pod 'CocoaLumberjack'
 end
