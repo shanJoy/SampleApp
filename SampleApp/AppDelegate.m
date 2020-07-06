@@ -87,4 +87,15 @@
     return YES;
 }
 
+#pragma mark - remote push delegate
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // GTNotification 中实现
+    NSLog(@"");
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"");
+}
+
 @end

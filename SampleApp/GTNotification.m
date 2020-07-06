@@ -8,6 +8,7 @@
 
 #import "GTNotification.h"
 #import <UserNotifications/UserNotifications.h>
+#import <UIKit/UIKit.h>
 
 @interface GTNotification ()<UNUserNotificationCenterDelegate>
 
@@ -31,7 +32,11 @@
     [center requestAuthorizationWithOptions:UNAuthorizationOptionBadge | UNAuthorizationOptionSound completionHandler:^(BOOL granted, NSError * _Nullable error) {
         
         if (granted) {
-            [self _pushLocalNotification];
+            //[self _pushLocalNotification];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            });
         }
     }];
 }
@@ -54,7 +59,7 @@
     }];
 }
 
-#pragma mark - delegate
+#pragma mark - localpush delegate
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
     completionHandler(UNNotificationPresentationOptionAlert);
