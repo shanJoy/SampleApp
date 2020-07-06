@@ -67,6 +67,12 @@
     return YES;
 }
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    // iOS13 及以上不会走这个方法
+    NSLog(@"did select - appdelegate.m");
+    //[self _changeIcon];
+}
+
 #pragma mark - UISceneSession lifecycle
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
@@ -97,5 +103,6 @@
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     NSLog(@"");
 }
+
 
 @end

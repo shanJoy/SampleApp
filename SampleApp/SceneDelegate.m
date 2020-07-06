@@ -72,11 +72,12 @@
     //[@[].mutableCopy addObject:nil];
     
     [[GTLocation locationManager] checkLocationAthorization];
-    [[GTNotification notificationManager] checkNotificationAthorization]; 
+    [[GTNotification notificationManager] checkNotificationAthorization];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    NSLog(@"did select");
+    NSLog(@"did select - sceneDelegate.m");
+    [self _changeIcon];
 }
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
@@ -154,6 +155,18 @@ void HandleNSException(NSException *exception) {
     __unused NSString *reason = [exception reason];
     __unused NSString *name = [exception name];
     //存储crash信息
+}
+
+#pragma mark - change icon
+
+- (void)_changeIcon{
+    //动态更换图标
+    if ([UIApplication sharedApplication].supportsAlternateIcons) {
+        [[UIApplication sharedApplication] setAlternateIconName:@"ICONBROWN" completionHandler:^(NSError * _Nullable error) {
+            NSLog(@"");
+            //回调
+        }];
+    }
 }
 
 @end

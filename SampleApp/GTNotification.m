@@ -59,13 +59,17 @@
     }];
 }
 
-#pragma mark - localpush delegate
+#pragma mark - localpush & remotepush  delegate
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
     completionHandler(UNNotificationPresentationOptionAlert);
 }
 
 - (void)userNotification2Center:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
+    
+    // badge -1 操作
+    //[UIApplication sharedApplication].applicationIconBadgeNumber = 100;
+    
     // 处理业务逻辑
     completionHandler();
 }

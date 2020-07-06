@@ -27,6 +27,7 @@
 		B10FE6A624B1644D00B2317A /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FE6A524B1644D00B2317A /* TencentOpenAPI.framework */; };
 		B10FE6A924B1AC1D00B2317A /* GTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6A824B1AC1D00B2317A /* GTLocation.m */; };
 		B10FE6AC24B1C3E000B2317A /* GTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6AB24B1C3E000B2317A /* GTNotification.m */; };
+		B10FE6AF24B3175500B2317A /* ICONBROWN.png in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6AE24B3175500B2317A /* ICONBROWN.png */; };
 		B114BBBE24AB656200F3FF72 /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBBC24AB656200F3FF72 /* libGTStatic.a */; };
 		B114BBDA24AB6A1100F3FF72 /* GTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; };
 		B114BBDB24AB6A1100F3FF72 /* GTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -91,6 +92,7 @@
 		B10FE6A824B1AC1D00B2317A /* GTLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTLocation.m; sourceTree = "<group>"; };
 		B10FE6AA24B1C3E000B2317A /* GTNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNotification.h; sourceTree = "<group>"; };
 		B10FE6AB24B1C3E000B2317A /* GTNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNotification.m; sourceTree = "<group>"; };
+		B10FE6AE24B3175500B2317A /* ICONBROWN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONBROWN.png; sourceTree = "<group>"; };
 		B114BBBB24AB656200F3FF72 /* GTStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStatic.h; sourceTree = "<group>"; };
 		B114BBBC24AB656200F3FF72 /* libGTStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGTStatic.a; sourceTree = "<group>"; };
 		B114BBBD24AB656200F3FF72 /* GTStaticTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStaticTest.h; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		795B907623C4AC8C008BDA00 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				B10FE6AD24B3166A00B2317A /* AlternateIcons */,
 				B114BBDD24AB6DE000F3FF72 /* MineController */,
 				B114BBBA24AB64CF00F3FF72 /* GTFramework */,
 				B14AB84724964EB300DE4B84 /* VideoController */,
@@ -238,6 +241,14 @@
 				795B90A223CC6A03008BDA00 /* GTDeleteCellView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B10FE6AD24B3166A00B2317A /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				B10FE6AE24B3175500B2317A /* ICONBROWN.png */,
+			);
+			path = AlternateIcons;
 			sourceTree = "<group>";
 		};
 		B114BBBA24AB64CF00F3FF72 /* GTFramework */ = {
@@ -347,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				795B909123CAB49B008BDA00 /* icon.bundle in Resources */,
+				B10FE6AF24B3175500B2317A /* ICONBROWN.png in Resources */,
 				B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */,
 				795B908423C4AC8D008BDA00 /* Assets.xcassets in Resources */,
 				795B908223C4AC8C008BDA00 /* Main.storyboard in Resources */,
