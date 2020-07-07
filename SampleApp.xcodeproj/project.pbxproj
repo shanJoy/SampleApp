@@ -210,6 +210,8 @@
 				B114BBBA24AB64CF00F3FF72 /* GTFramework */,
 				B14AB84724964EB300DE4B84 /* VideoController */,
 				795B90A723CD5AC3008BDA00 /* NewsController */,
+				B10FE6C924B4160200B2317A /* RecommandController */,
+				B10FE6C824B4155300B2317A /* Utils */,
 				795B909023CAB49B008BDA00 /* icon.bundle */,
 				795B907723C4AC8C008BDA00 /* AppDelegate.h */,
 				795B907823C4AC8C008BDA00 /* AppDelegate.m */,
@@ -220,18 +222,6 @@
 				795B908323C4AC8D008BDA00 /* Assets.xcassets */,
 				795B908823C4AC8D008BDA00 /* Info.plist */,
 				795B908923C4AC8D008BDA00 /* main.m */,
-				795B909523CB24FB008BDA00 /* GTRecommandViewController.h */,
-				795B909623CB24FB008BDA00 /* GTRecommandViewController.m */,
-				B1AE8128249E466E00F3A7D0 /* GTScreen.h */,
-				B1AE8129249E466E00F3A7D0 /* GTScreen.m */,
-				B132878A24A237ED001F1DA6 /* GTSplashView.h */,
-				B132878B24A237ED001F1DA6 /* GTSplashView.m */,
-				B1897DFD24AA116F0039B409 /* GTMediator.h */,
-				B1897DFE24AA116F0039B409 /* GTMediator.m */,
-				B10FE6A724B1AC1D00B2317A /* GTLocation.h */,
-				B10FE6A824B1AC1D00B2317A /* GTLocation.m */,
-				B10FE6AA24B1C3E000B2317A /* GTNotification.h */,
-				B10FE6AB24B1C3E000B2317A /* GTNotification.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -305,6 +295,32 @@
 				B10FE6BE24B4109100B2317A /* Info.plist */,
 			);
 			path = GTToday;
+			sourceTree = "<group>";
+		};
+		B10FE6C824B4155300B2317A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1AE8128249E466E00F3A7D0 /* GTScreen.h */,
+				B1AE8129249E466E00F3A7D0 /* GTScreen.m */,
+				B132878A24A237ED001F1DA6 /* GTSplashView.h */,
+				B132878B24A237ED001F1DA6 /* GTSplashView.m */,
+				B1897DFD24AA116F0039B409 /* GTMediator.h */,
+				B1897DFE24AA116F0039B409 /* GTMediator.m */,
+				B10FE6A724B1AC1D00B2317A /* GTLocation.h */,
+				B10FE6A824B1AC1D00B2317A /* GTLocation.m */,
+				B10FE6AA24B1C3E000B2317A /* GTNotification.h */,
+				B10FE6AB24B1C3E000B2317A /* GTNotification.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B10FE6C924B4160200B2317A /* RecommandController */ = {
+			isa = PBXGroup;
+			children = (
+				795B909523CB24FB008BDA00 /* GTRecommandViewController.h */,
+				795B909623CB24FB008BDA00 /* GTRecommandViewController.m */,
+			);
+			path = RecommandController;
 			sourceTree = "<group>";
 		};
 		B114BBBA24AB64CF00F3FF72 /* GTFramework */ = {
