@@ -77,7 +77,7 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     NSLog(@"did select - sceneDelegate.m");
-    [self _changeIcon];
+    //[self _changeIcon];
 }
 
 - (void)sceneDidDisconnect:(UIScene *)scene {

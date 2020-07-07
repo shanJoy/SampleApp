@@ -28,6 +28,11 @@
 		B10FE6A924B1AC1D00B2317A /* GTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6A824B1AC1D00B2317A /* GTLocation.m */; };
 		B10FE6AC24B1C3E000B2317A /* GTNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6AB24B1C3E000B2317A /* GTNotification.m */; };
 		B10FE6AF24B3175500B2317A /* ICONBROWN.png in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6AE24B3175500B2317A /* ICONBROWN.png */; };
+		B10FE6B624B4109100B2317A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FE6B524B4109100B2317A /* NotificationCenter.framework */; };
+		B10FE6BA24B4109100B2317A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6B924B4109100B2317A /* TodayViewController.m */; };
+		B10FE6BD24B4109100B2317A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6BB24B4109100B2317A /* MainInterface.storyboard */; };
+		B10FE6C124B4109100B2317A /* GTToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B10FE6B424B4109100B2317A /* GTToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B10FE6C724B411CB00B2317A /* ICONGREEN.png in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6C624B411CB00B2317A /* ICONGREEN.png */; };
 		B114BBBE24AB656200F3FF72 /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBBC24AB656200F3FF72 /* libGTStatic.a */; };
 		B114BBDA24AB6A1100F3FF72 /* GTFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; };
 		B114BBDB24AB6A1100F3FF72 /* GTFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBD824AB698800F3FF72 /* GTFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,7 +46,28 @@
 		B1AE812A249E466E00F3A7D0 /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE8129249E466E00F3A7D0 /* GTScreen.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B10FE6BF24B4109100B2317A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 795B906C23C4AC8C008BDA00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B10FE6B324B4109100B2317A;
+			remoteInfo = GTToday;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		B10FE6C524B4109200B2317A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B10FE6C124B4109100B2317A /* GTToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B114BBDC24AB6A1100F3FF72 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +119,13 @@
 		B10FE6AA24B1C3E000B2317A /* GTNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNotification.h; sourceTree = "<group>"; };
 		B10FE6AB24B1C3E000B2317A /* GTNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNotification.m; sourceTree = "<group>"; };
 		B10FE6AE24B3175500B2317A /* ICONBROWN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONBROWN.png; sourceTree = "<group>"; };
+		B10FE6B424B4109100B2317A /* GTToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GTToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10FE6B524B4109100B2317A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B10FE6B824B4109100B2317A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		B10FE6B924B4109100B2317A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		B10FE6BC24B4109100B2317A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B10FE6BE24B4109100B2317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10FE6C624B411CB00B2317A /* ICONGREEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONGREEN.png; sourceTree = "<group>"; };
 		B114BBBB24AB656200F3FF72 /* GTStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStatic.h; sourceTree = "<group>"; };
 		B114BBBC24AB656200F3FF72 /* libGTStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGTStatic.a; sourceTree = "<group>"; };
 		B114BBBD24AB656200F3FF72 /* GTStaticTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStaticTest.h; sourceTree = "<group>"; };
@@ -128,6 +161,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B10FE6B124B4109100B2317A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10FE6B624B4109100B2317A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -136,6 +177,7 @@
 			children = (
 				B10FE6A324B15C6D00B2317A /* SystemConfiguration.framework */,
 				B9116FAB144CE19B892B9CDE /* libPods-SampleApp.a */,
+				B10FE6B524B4109100B2317A /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				795B907623C4AC8C008BDA00 /* SampleApp */,
+				B10FE6B724B4109100B2317A /* GTToday */,
 				795B907523C4AC8C008BDA00 /* Products */,
 				C44F3989351EC87D853DF92C /* Pods */,
 				0C295AF4A9BAE9BB1846EC0E /* Frameworks */,
@@ -154,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				795B907423C4AC8C008BDA00 /* SampleApp.app */,
+				B10FE6B424B4109100B2317A /* GTToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,8 +291,20 @@
 			isa = PBXGroup;
 			children = (
 				B10FE6AE24B3175500B2317A /* ICONBROWN.png */,
+				B10FE6C624B411CB00B2317A /* ICONGREEN.png */,
 			);
 			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
+		B10FE6B724B4109100B2317A /* GTToday */ = {
+			isa = PBXGroup;
+			children = (
+				B10FE6B824B4109100B2317A /* TodayViewController.h */,
+				B10FE6B924B4109100B2317A /* TodayViewController.m */,
+				B10FE6BB24B4109100B2317A /* MainInterface.storyboard */,
+				B10FE6BE24B4109100B2317A /* Info.plist */,
+			);
+			path = GTToday;
 			sourceTree = "<group>";
 		};
 		B114BBBA24AB64CF00F3FF72 /* GTFramework */ = {
@@ -310,15 +366,34 @@
 				795B907123C4AC8C008BDA00 /* Frameworks */,
 				795B907223C4AC8C008BDA00 /* Resources */,
 				B114BBDC24AB6A1100F3FF72 /* Embed Frameworks */,
+				B10FE6C524B4109200B2317A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B10FE6C024B4109100B2317A /* PBXTargetDependency */,
 			);
 			name = SampleApp;
 			productName = SampleApp;
 			productReference = 795B907423C4AC8C008BDA00 /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B10FE6B324B4109100B2317A /* GTToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10FE6C224B4109200B2317A /* Build configuration list for PBXNativeTarget "GTToday" */;
+			buildPhases = (
+				B10FE6B024B4109100B2317A /* Sources */,
+				B10FE6B124B4109100B2317A /* Frameworks */,
+				B10FE6B224B4109100B2317A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTToday;
+			productName = GTToday;
+			productReference = B10FE6B424B4109100B2317A /* GTToday.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -331,6 +406,9 @@
 				TargetAttributes = {
 					795B907323C4AC8C008BDA00 = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					B10FE6B324B4109100B2317A = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -348,6 +426,7 @@
 			projectRoot = "";
 			targets = (
 				795B907323C4AC8C008BDA00 /* SampleApp */,
+				B10FE6B324B4109100B2317A /* GTToday */,
 			);
 		};
 /* End PBXProject section */
@@ -359,9 +438,18 @@
 			files = (
 				795B909123CAB49B008BDA00 /* icon.bundle in Resources */,
 				B10FE6AF24B3175500B2317A /* ICONBROWN.png in Resources */,
+				B10FE6C724B411CB00B2317A /* ICONGREEN.png in Resources */,
 				B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */,
 				795B908423C4AC8D008BDA00 /* Assets.xcassets in Resources */,
 				795B908223C4AC8C008BDA00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10FE6B224B4109100B2317A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10FE6BD24B4109100B2317A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +509,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B10FE6B024B4109100B2317A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10FE6BA24B4109100B2317A /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B10FE6C024B4109100B2317A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B10FE6B324B4109100B2317A /* GTToday */;
+			targetProxy = B10FE6BF24B4109100B2317A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		795B908023C4AC8C008BDA00 /* Main.storyboard */ = {
@@ -430,6 +534,14 @@
 				795B908123C4AC8C008BDA00 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B10FE6BB24B4109100B2317A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B10FE6BC24B4109100B2317A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */ = {
@@ -611,6 +723,46 @@
 			};
 			name = Release;
 		};
+		B10FE6C324B4109200B2317A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8235HY6K4;
+				INFOPLIST_FILE = GTToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhngsj.SampleApp.GTToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B10FE6C424B4109200B2317A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8235HY6K4;
+				INFOPLIST_FILE = GTToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhngsj.SampleApp.GTToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +780,15 @@
 			buildConfigurations = (
 				795B908E23C4AC8D008BDA00 /* Debug */,
 				795B908F23C4AC8D008BDA00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10FE6C224B4109200B2317A /* Build configuration list for PBXNativeTarget "GTToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10FE6C324B4109200B2317A /* Debug */,
+				B10FE6C424B4109200B2317A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

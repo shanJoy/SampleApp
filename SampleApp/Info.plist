@@ -6,6 +6,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>ICONGREEN</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>ICONGREEN</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>ICONBROWN</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
