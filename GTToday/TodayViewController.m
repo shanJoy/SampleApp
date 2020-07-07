@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import <TencentOpenApi/QQApiInterface.h>
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -25,6 +26,11 @@
         [button addTarget:self action:@selector(_openSampleApp) forControlEvents:UIControlEventTouchUpInside];
         button;
     })];
+    
+    NSUserDefaults *userDefault = [[NSUserDefaults alloc] initWithSuiteName:@"groupid"];
+    //[userDefault setValue:@"从0开发一款APP" forKey:@"title"];
+    [userDefault objectForKey:@"title"];
+    NSLog(@"");
 }
 
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {

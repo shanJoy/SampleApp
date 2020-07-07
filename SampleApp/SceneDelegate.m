@@ -71,8 +71,11 @@
     //[self _catchException];
     //[@[].mutableCopy addObject:nil];
     
-    [[GTLocation locationManager] checkLocationAthorization];
-    [[GTNotification notificationManager] checkNotificationAthorization];
+    //[[GTLocation locationManager] checkLocationAthorization];
+    //[[GTNotification notificationManager] checkNotificationAthorization];
+    
+    NSUserDefaults *userDefault = [[NSUserDefaults alloc] initWithSuiteName:@"groupid"];
+    [userDefault setValue:@"从0开发一款APP" forKey:@"title"];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
