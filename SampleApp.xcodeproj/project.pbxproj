@@ -30,7 +30,6 @@
 		B10FE6AF24B3175500B2317A /* ICONBROWN.png in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6AE24B3175500B2317A /* ICONBROWN.png */; };
 		B10FE6B624B4109100B2317A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FE6B524B4109100B2317A /* NotificationCenter.framework */; };
 		B10FE6BA24B4109100B2317A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FE6B924B4109100B2317A /* TodayViewController.m */; };
-		B10FE6BD24B4109100B2317A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6BB24B4109100B2317A /* MainInterface.storyboard */; };
 		B10FE6C124B4109100B2317A /* GTToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B10FE6B424B4109100B2317A /* GTToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B10FE6C724B411CB00B2317A /* ICONGREEN.png in Resources */ = {isa = PBXBuildFile; fileRef = B10FE6C624B411CB00B2317A /* ICONGREEN.png */; };
 		B114BBBE24AB656200F3FF72 /* libGTStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B114BBBC24AB656200F3FF72 /* libGTStatic.a */; };
@@ -123,7 +122,6 @@
 		B10FE6B524B4109100B2317A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		B10FE6B824B4109100B2317A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		B10FE6B924B4109100B2317A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
-		B10FE6BC24B4109100B2317A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B10FE6BE24B4109100B2317A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10FE6C624B411CB00B2317A /* ICONGREEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICONGREEN.png; sourceTree = "<group>"; };
 		B114BBBB24AB656200F3FF72 /* GTStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTStatic.h; sourceTree = "<group>"; };
@@ -291,7 +289,6 @@
 			children = (
 				B10FE6B824B4109100B2317A /* TodayViewController.h */,
 				B10FE6B924B4109100B2317A /* TodayViewController.m */,
-				B10FE6BB24B4109100B2317A /* MainInterface.storyboard */,
 				B10FE6BE24B4109100B2317A /* Info.plist */,
 			);
 			path = GTToday;
@@ -465,7 +462,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10FE6BD24B4109100B2317A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,14 +546,6 @@
 				795B908123C4AC8C008BDA00 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B10FE6BB24B4109100B2317A /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B10FE6BC24B4109100B2317A /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */ = {
