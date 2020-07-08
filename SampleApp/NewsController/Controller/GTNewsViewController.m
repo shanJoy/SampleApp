@@ -12,6 +12,8 @@
 #import "GTListLoader.h"
 #import "GTListItem.h"
 #import "GTMediator.h"
+#import "GTSearchBar.h"
+#import "GTScreen.h"
 
 @interface TestView : UIView
 @end
@@ -68,6 +70,12 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    [self.tabBarController.navigationItem setTitleView:({
+        GTSearchBar *searchBar = [[GTSearchBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - UI(20), self.navigationController.navigationBar.bounds.size.height)];
+        searchBar;
+    })];
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
