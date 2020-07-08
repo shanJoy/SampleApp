@@ -2,6 +2,21 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+##file
+*.app.dSYM.zip
+.DS_Store
+
+## Build generated
+build/
+DerivedData
+
+## .DS_store
+*.DS_Store
+.DS_Store
+.DS_Store?
+*.swp
+*.swo
+
 ## User settings
 xcuserdata/
 
