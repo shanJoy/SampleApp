@@ -44,6 +44,7 @@
 		B191D2EF249909B1007BC3AF /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */; };
 		B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1929DD7249A414B002E6967 /* GTVideoToolBar.m */; };
 		B1A74CFD24B560930007F458 /* GTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A74CFC24B560930007F458 /* GTSearchBar.m */; };
+		B1A74D0024B56E3E0007F458 /* GTCommentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A74CFF24B56E3E0007F458 /* GTCommentManager.m */; };
 		B1AE812A249E466E00F3A7D0 /* GTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AE8129249E466E00F3A7D0 /* GTScreen.m */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,8 @@
 		B1929DD7249A414B002E6967 /* GTVideoToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolBar.m; sourceTree = "<group>"; };
 		B1A74CFB24B560930007F458 /* GTSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSearchBar.h; sourceTree = "<group>"; };
 		B1A74CFC24B560930007F458 /* GTSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSearchBar.m; sourceTree = "<group>"; };
+		B1A74CFE24B56E3E0007F458 /* GTCommentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCommentManager.h; sourceTree = "<group>"; };
+		B1A74CFF24B56E3E0007F458 /* GTCommentManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTCommentManager.m; sourceTree = "<group>"; };
 		B1AE8128249E466E00F3A7D0 /* GTScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTScreen.h; sourceTree = "<group>"; };
 		B1AE8129249E466E00F3A7D0 /* GTScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTScreen.m; sourceTree = "<group>"; };
 		B9116FAB144CE19B892B9CDE /* libPods-SampleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +284,8 @@
 				795B90A223CC6A03008BDA00 /* GTDeleteCellView.m */,
 				B1A74CFB24B560930007F458 /* GTSearchBar.h */,
 				B1A74CFC24B560930007F458 /* GTSearchBar.m */,
+				B1A74CFE24B56E3E0007F458 /* GTCommentManager.h */,
+				B1A74CFF24B56E3E0007F458 /* GTCommentManager.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				795B90A023CC51AA008BDA00 /* GTDetailViewController.m in Sources */,
 				B13D4E19249651DC003705AE /* GTVideoCoverView.m in Sources */,
 				B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */,
+				B1A74D0024B56E3E0007F458 /* GTCommentManager.m in Sources */,
 				795B90A323CC6A03008BDA00 /* GTDeleteCellView.m in Sources */,
 				795B909D23CBF357008BDA00 /* GTNormalTableViewCell.m in Sources */,
 				B10FE6A024AF315F00B2317A /* GTLogin.m in Sources */,
