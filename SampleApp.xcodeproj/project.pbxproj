@@ -40,6 +40,7 @@
 		B132878C24A237ED001F1DA6 /* GTSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = B132878B24A237ED001F1DA6 /* GTSplashView.m */; };
 		B13D4E19249651DC003705AE /* GTVideoCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = B13D4E18249651DC003705AE /* GTVideoCoverView.m */; };
 		B170755124A8BFE400D49E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B170754F24A8BFE400D49E06 /* LaunchScreen.storyboard */; };
+		B18176B124B6B9D500A89D13 /* GTRecommendSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18176B024B6B9D500A89D13 /* GTRecommendSectionController.m */; };
 		B1897DFF24AA116F0039B409 /* GTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1897DFE24AA116F0039B409 /* GTMediator.m */; };
 		B191D2EF249909B1007BC3AF /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B191D2EE249909B1007BC3AF /* GTVideoPlayer.m */; };
 		B1929DD8249A414B002E6967 /* GTVideoToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B1929DD7249A414B002E6967 /* GTVideoToolBar.m */; };
@@ -140,6 +141,8 @@
 		B13D4E17249651DC003705AE /* GTVideoCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoCoverView.h; sourceTree = "<group>"; };
 		B13D4E18249651DC003705AE /* GTVideoCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoCoverView.m; sourceTree = "<group>"; };
 		B170755024A8BFE400D49E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B18176AF24B6B9D500A89D13 /* GTRecommendSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRecommendSectionController.h; sourceTree = "<group>"; };
+		B18176B024B6B9D500A89D13 /* GTRecommendSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendSectionController.m; sourceTree = "<group>"; };
 		B1897DFD24AA116F0039B409 /* GTMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMediator.h; sourceTree = "<group>"; };
 		B1897DFE24AA116F0039B409 /* GTMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMediator.m; sourceTree = "<group>"; };
 		B191D2ED249909B1007BC3AF /* GTVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoPlayer.h; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 			children = (
 				795B909523CB24FB008BDA00 /* GTRecommandViewController.h */,
 				795B909623CB24FB008BDA00 /* GTRecommandViewController.m */,
+				B18176AF24B6B9D500A89D13 /* GTRecommendSectionController.h */,
+				B18176B024B6B9D500A89D13 /* GTRecommendSectionController.m */,
 			);
 			path = RecommandController;
 			sourceTree = "<group>";
@@ -528,6 +533,7 @@
 				B114BBE024AB6E3200F3FF72 /* GTMineViewController.m in Sources */,
 				B1A74CFD24B560930007F458 /* GTSearchBar.m in Sources */,
 				795B90B223CDBA7F008BDA00 /* GTListItem.m in Sources */,
+				B18176B124B6B9D500A89D13 /* GTRecommendSectionController.m in Sources */,
 				B132878C24A237ED001F1DA6 /* GTSplashView.m in Sources */,
 				795B909723CB24FB008BDA00 /* GTRecommandViewController.m in Sources */,
 				795B907923C4AC8C008BDA00 /* AppDelegate.m in Sources */,

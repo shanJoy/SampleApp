@@ -7,8 +7,16 @@
 //
 
 #import "GTRecommandViewController.h"
+#import "GTRecommendSectionController.h"
+#import "GTListLoader.h"
+#import "IGListKit.h"
 
-@interface GTRecommandViewController ()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
+@interface GTRecommandViewController ()<UIScrollViewDelegate,IGListAdapterDataSource>
+
+@property(nonatomic, strong, readwrite) UICollectionView *collectionView;
+@property(nonatomic, strong, readwrite) IGListAdapter *listAdapter;
+@property(nonatomic, strong, readwrite) GTListLoader *listLoader;
+@property(nonatomic, strong, readwrite) NSArray *dataArray;
 
 @end
 
@@ -28,43 +36,45 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    scrollView.backgroundColor = [UIColor purpleColor];
-    scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 5, self.view.bounds.size.height);
-    scrollView.delegate = self;
-    NSArray *colorArray = @[[UIColor magentaColor],[UIColor cyanColor],[UIColor brownColor],[UIColor redColor],[UIColor systemPinkColor]];
+    self.listLoader = [[GTListLoader alloc] init];
     
-    for (int i=0; i<5; i++) {
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(scrollView.bounds.size.width * i, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
-        
-//        UIImage *image2x = [UIImage imageNamed:@"testScale"];
-        
-        [view addSubview:({
-            UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 200, 100, 100)];
-            view.backgroundColor = [UIColor whiteColor];
-            UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick)];
-            gesture.delegate = self;
-            [view addGestureRecognizer:gesture];
-            view;
-        })];
-        view.backgroundColor = [colorArray objectAtIndex:i];
-        [scrollView addSubview:view];
-    }
+    [self.view addSubview:({
+        _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[UICollectionViewFlowLayout new]];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView;
+    })];
     
-    //scrollView.pagingEnabled = YES;
-    [self.view addSubview:scrollView];
+    _listAdapter = [[IGListAdapter alloc] initWithUpdater:[IGListAdapterUpdater new] viewController:self workingRangeSize:0];
+    
+    _listAdapter.dataSource = self;
+    _listAdapter.scrollViewDelegate = self;
+    _listAdapter.collectionView = _collectionView;
+    
+    __weak typeof(self)wself = self;
+    [self.listLoader loadListDataWithFinishBlock:^(BOOL success, NSArray<GTListItem *> * _Nonnull dataArray) {
+        __strong typeof (wself) strongSelf = wself;
+        strongSelf.dataArray = dataArray;
+        [strongSelf.listAdapter reloadDataWithCompletion:nil];
+    }];
+
 }
 
-- (void)viewClick {
-    
-    NSURL *urlScheme = [NSURL URLWithString:@"testScheme://"];
-    
-    BOOL canOpenURL = [[UIApplication sharedApplication] canOpenURL:urlScheme];
-    
-    [[UIApplication sharedApplication] openURL:urlScheme options:nil completionHandler:^(BOOL success) {
-        NSLog(@"");
-    }];
+#pragma mark -
+
+- (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    NSLog(@"-------dataArray-----%@",self.dataArray);
+    return @[@"1", @"2", @"3", @"4", @"5"];
 }
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    return [GTRecommendSectionController new];
+}
+
+- (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
+}
+
+#pragma mark - UISCROLLVIEW DELEGATE
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     return YES;
@@ -88,6 +98,19 @@
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSLog(@"scrollViewDidEndDecelerating");
+}
+
+#pragma mark - SCHEME TEST
+
+- (void)viewClick {
+
+    NSURL *urlScheme = [NSURL URLWithString:@"testScheme://"];
+
+    __unused BOOL canOpenURL = [[UIApplication sharedApplication] canOpenURL:urlScheme];
+
+    [[UIApplication sharedApplication] openURL:urlScheme options:nil completionHandler:^(BOOL success) {
+        NSLog(@"");
+    }];
 }
 
 @end
